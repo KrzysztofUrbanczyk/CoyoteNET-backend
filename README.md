@@ -7,35 +7,35 @@ How to setup this project:
 
 2. Setup Database
 
- 1. First approach: 
-    * Download & Install [SQL Express](https://www.microsoft.com/pl-pl/sql-server/sql-server-editions-express)
+   1. First approach: 
+       * Download & Install [SQL Express](https://www.microsoft.com/pl-pl/sql-server/sql-server-editions-express)
 
-    * change connection string in **appsettings.json** to ``Server=.\\SQLExpress;Database=CoyoteNET;Trusted_Connection=Yes;``
+       * change connection string in **appsettings.json** to ``Server=.\\SQLExpress;Database=CoyoteNET;Trusted_Connection=Yes;``
 
     
 
-  2. Second approach:
+   2. Second approach:
   
-   * Get docker
+      * Get docker
 
-      a. [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
+           a. [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
 
-      b. [Docker for Linux](https://docs.docker.com/install/linux/docker-ce/centos/)
+           b. [Docker for Linux](https://docs.docker.com/install/linux/docker-ce/centos/)
 
-   * Follow this guide or just copy/paste from next step: [Guide](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017)
+      * Follow this [guide](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017) or just copy/paste from next step: 
 
-	 * Bash:
+	  * Bash:
 
 	      sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
 	      -p 1433:1433 --name sql1 \
 	      -d mcr.microsoft.com/mssql/server:2017-latest
 
-	 * Powershell
+	  * Powershell
 
 	      docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=<YourStrong!Passw0rd>" `
 	      -p 1433:1433 --name sql1 `
 	      -d mcr.microsoft.com/mssql/server:2017-latest
 
-   * change connection string in **appsettings.json** to ``Server=localhost,1433;Database=CoyoteNET;User Id=sa;Password=<YourStrong!Passw0rd>``
+     3. change connection string in **appsettings.json** to ``Server=localhost,1433;Database=CoyoteNET;User Id=sa;Password=<YourStrong!Passw0rd>``
 
 3 type ``dotnet run`` inside ``Runner`` folder.
