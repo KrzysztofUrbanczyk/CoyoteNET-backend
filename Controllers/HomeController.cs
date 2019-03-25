@@ -1,7 +1,7 @@
-﻿using DAL;
-using System;
+﻿using Microsoft.AspNetCore.Mvc;
 using Services;
-using Microsoft.AspNetCore.Mvc;
+using System;
+using DAL;
 
 namespace Controllers
 {
@@ -9,11 +9,13 @@ namespace Controllers
     {
         private readonly TestService _service;
         private readonly Context _db;
+
         public HomeController(Context db, TestService service)
         {
             _db = db;
             _service = service;
         }
+
         public IActionResult Index()
         {
             _service.Test();

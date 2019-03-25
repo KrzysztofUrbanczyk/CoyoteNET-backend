@@ -1,10 +1,8 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
-using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Text;
+using System;
 using Xunit;
 
 namespace Tests
@@ -12,6 +10,7 @@ namespace Tests
     public class FrontEnd
     {
         IWebDriver driver;
+
         public FrontEnd()
         {
             throw new NotImplementedException();
