@@ -15,6 +15,7 @@ How to setup this project:
     
 
   2. Second approach:
+  
     * Get docker
 
      a. [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
@@ -23,21 +24,17 @@ How to setup this project:
 
     * Follow this guide or just copy/paste from next step: [Guide](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017)
 
- 
-        * Bash:
+	* Bash:
 
-    sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
--p 1433:1433 --name sql1 \
--d mcr.microsoft.com/mssql/server:2017-latest
+	sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
+	-p 1433:1433 --name sql1 \
+	-d mcr.microsoft.com/mssql/server:2017-latest
 
-          * Powershell
+	* Powershell
 
-    docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=<YourStrong!Passw0rd>" `
-   -p 1433:1433 --name sql1 `
-   -d mcr.microsoft.com/mssql/server:2017-latest
-
-
-
+	docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=<YourStrong!Passw0rd>" `
+	-p 1433:1433 --name sql1 `
+	-d mcr.microsoft.com/mssql/server:2017-latest
 
     * change connection string in **appsettings.json** to ``Server=localhost,1433;Database=CoyoteNET;User Id=sa;Password=<YourStrong!Passw0rd>``
 
