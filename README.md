@@ -18,9 +18,9 @@ How to setup this project:
   
    * Get docker
 
-    a. [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
+   a. [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
 
-    b. [Docker for Linux](https://docs.docker.com/install/linux/docker-ce/centos/)
+   b. [Docker for Linux](https://docs.docker.com/install/linux/docker-ce/centos/)
 
    * Follow this guide or just copy/paste from next step: [Guide](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017)
 
