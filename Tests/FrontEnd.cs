@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using Xunit;
 
-namespace Coyote.NETCore.Tests
+namespace Tests
 {
     public class FrontEnd
     {

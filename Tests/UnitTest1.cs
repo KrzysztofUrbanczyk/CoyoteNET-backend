@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace Coyote.NETCore.Tests
+namespace Tests
 {
     public class UnitTest1
     {
