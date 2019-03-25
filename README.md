@@ -36,6 +36,6 @@ How to setup this project:
 	-p 1433:1433 --name sql1 `
 	-d mcr.microsoft.com/mssql/server:2017-latest
 
-    * change connection string in **appsettings.json** to ``Server=localhost,1433;Database=CoyoteNET;User Id=sa;Password=<YourStrong!Passw0rd>``
+   * change connection string in **appsettings.json** to ``Server=localhost,1433;Database=CoyoteNET;User Id=sa;Password=<YourStrong!Passw0rd>``
 
 3 type ``dotnet run`` inside ``Runner`` folder.
