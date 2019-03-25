@@ -1,12 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DAL;
 using System;
+using Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : DefaultController
     {
+        private readonly TestService _service;
+        private readonly Context _db;
+        public HomeController(Context db, TestService service)
+        {
+            _db = db;
+            _service = service;
+        }
         public IActionResult Index()
         {
+            _service.Test();
             return View();
         }
 
