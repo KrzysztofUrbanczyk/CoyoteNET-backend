@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Controllers
+namespace CoyoteNETCore.Controllers
 {
     public class DefaultController : Controller
     {

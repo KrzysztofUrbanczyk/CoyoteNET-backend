@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
 
-namespace Shared
+namespace CoyoteNETCore.Shared
 {
     public class User : IdentityUser
     {

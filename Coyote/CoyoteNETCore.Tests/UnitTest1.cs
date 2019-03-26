@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using CoyoteNETCore.DAL;
 using Xunit;
-using DAL;
 
-namespace Tests
+
+namespace CoyoteNETCore.Tests
 {
     public class UnitTest1
     {

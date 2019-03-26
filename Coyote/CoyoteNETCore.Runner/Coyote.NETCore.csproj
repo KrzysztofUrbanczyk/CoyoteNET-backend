@@ -13,7 +13,10 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\Controllers\Controllers.csproj" />
+    <ProjectReference Include="..\CoyoteNETCore.Controllers\CoyoteNETCore.Controllers.csproj" />
+    <ProjectReference Include="..\CoyoteNETCore.Shared\CoyoteNETCore.Shared.csproj" />
   </ItemGroup>
+
+
 
 </Project>

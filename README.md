@@ -1,44 +1,74 @@
 # Coyote.NETCore
 
+An implementation of Coyote forum engine in .NET Core 
 
-How to setup this project:
+## Getting started
 
-1. Get [.NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+### Prerequisites
 
-2. Setup Database
+* [.NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 
-   1. First approach: 
-       * Download & Install [SQL Express](https://www.microsoft.com/pl-pl/sql-server/sql-server-editions-express)
+### Installing
 
-       * change connection string in **appsettings.json** to ``Server=.\\SQLExpress;Database=CoyoteNET;Trusted_Connection=Yes;``
+#### Setup Database
 
-    
+1. First approach (using SQL Express): 
 
-   2. Second approach:
+	* Download & Install [SQL Express](https://www.microsoft.com/pl-pl/sql-server/sql-server-editions-express)
+
+    * change connection string in **appsettings.json** to ``Server=.\\SQLExpress;Database=CoyoteNET;Trusted_Connection=Yes;``
+
+2. Second approach (using MSSQL Docker image):
   
-      * Get docker
+    * Get docker
 
-           a. [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
+        - [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
 
-           b. [Docker for Linux](https://docs.docker.com/install/linux/docker-ce/centos/)
+        - [Docker for Linux](https://docs.docker.com/install/linux/docker-ce/centos/)
 
-      * Follow this [guide](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017) or just copy/paste from next step: 
+    * Follow this [guide](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017) or just copy/paste from next step: 
 
-	  * Bash:
+    * Bash:
 
-	      sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
-	      -p 1433:1433 --name sql1 \
-	      -d mcr.microsoft.com/mssql/server:2017-latest
+        ```bash
+        sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
+        -p 1433:1433 --name sql1 \
+        -d mcr.microsoft.com/mssql/server:2017-latest
+        ```
 
-	  * Powershell
+    * Powershell
 
-	      docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=<YourStrong!Passw0rd>" `
-	      -p 1433:1433 --name sql1 `
-	      -d mcr.microsoft.com/mssql/server:2017-latest
+        ```powershell
+        docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=<YourStrong!Passw0rd>" `
+        -p 1433:1433 --name sql1 `
+        -d mcr.microsoft.com/mssql/server:2017-latest
+        ```
 
-     3. change connection string in **appsettings.json** to ``Server=localhost,1433;Database=CoyoteNET;User Id=sa;Password=<YourStrong!Passw0rd>``
+#### Settings update
 
-3 type ``dotnet run`` inside ``Runner`` folder.
+Change connection string in [appsettings.json](https://github.com/dotNETSanta/Coyote.NETCore/blob/master/Runner/appsettings.json) to:
 
+```string
+Server=localhost,1433;Database=CoyoteNET;User Id=sa;Password=<YourStrong!Passw0rd>
+```
 
-**[Slack \*click\*](https://join.slack.com/t/coyotenetcore/shared_invite/enQtNTg3NDQ5NzA5OTcyLTNlYWU1YmY1Yjg0Yzc2MDFjMzU3NTZkNjIzNDdkODE1NGE5NTQwZDA4Y2UyMWRkOWMyZGJkYmIzZTlkYjA5OWE)**
+#### Make it run
+
+Go into `Runner` folder and use below command to run project
+
+```bash
+dotnet run
+```
+
+## Links
+
+- 💬 Chat: [Slack](https://join.slack.com/t/coyotenetcore/shared_invite/enQtNTg3NDQ5NzA5OTcyLTNlYWU1YmY1Yjg0Yzc2MDFjMzU3NTZkNjIzNDdkODE1NGE5NTQwZDA4Y2UyMWRkOWMyZGJkYmIzZTlkYjA5OWE)
+
+## Built With
+
+* [ASP.NET Core 2.2](https://docs.microsoft.com/pl-pl/aspnet/core/?view=aspnetcore-2.2) - The web framework used
+* [EntityFrameworkCore](https://github.com/aspnet/EntityFrameworkCore) - ORM
+
+## Contributors
+
+Thank you to all our [contributors](https://github.com/dotNETSanta/Coyote.NETCore/graphs/contributors)!

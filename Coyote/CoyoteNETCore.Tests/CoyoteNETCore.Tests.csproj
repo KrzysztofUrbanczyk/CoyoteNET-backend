@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -15,10 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Controllers\Controllers.csproj" />
-    <ProjectReference Include="..\DAL\DAL.csproj" />
-    <ProjectReference Include="..\Services\Services.csproj" />
-    <ProjectReference Include="..\Shared\Shared.csproj" />
+    <ProjectReference Include="..\CoyoteNETCore.DAL\CoyoteNETCore.DAL.csproj" />
+    <ProjectReference Include="..\CoyoteNETCore.Services\CoyoteNETCore.Services.csproj" />
+    <ProjectReference Include="..\CoyoteNETCore.Shared\CoyoteNETCore.Shared.csproj" />
   </ItemGroup>
 
 </Project>

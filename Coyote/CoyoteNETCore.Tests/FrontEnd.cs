@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
-using System.IO;
 using System.Reflection;
+using System.IO;
 using System;
 using Xunit;
 
-namespace Tests
+namespace CoyoteNETCore.Tests
 {
     public class FrontEnd
     {

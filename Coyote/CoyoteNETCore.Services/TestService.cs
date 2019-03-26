@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Services
+namespace CoyoteNETCore.Services
 {
     public class TestService
     {
