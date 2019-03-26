@@ -8,6 +8,11 @@ using Microsoft.Extensions.DependencyInjection;
 using CoyoteNETCore.Controllers;
 using CoyoteNETCore.Services;
 using CoyoteNETCore.DAL;
+using Swashbuckle.AspNetCore.Swagger;
+using System.Reflection;
+using System;
+using System.IO;
+using Swashbuckle.AspNetCore.SwaggerUI;
 
 namespace Coyote.NETCore
 {
@@ -33,6 +38,11 @@ namespace Coyote.NETCore
                 .AddApplicationPart(typeof(HomeController).Assembly)
                 .AddControllersAsServices()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "Coyote API", Version = "v1" });
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, Context context)
@@ -55,6 +65,15 @@ namespace Coyote.NETCore
             {
                 app.UseHsts();
             }
+            
+            app.UseSwagger();
+            
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Coyote API V1");
+                c.RoutePrefix = string.Empty;
+                c.DocExpansion(DocExpansion.None);
+            });
 
             //app.UseHttpsRedirection();
 

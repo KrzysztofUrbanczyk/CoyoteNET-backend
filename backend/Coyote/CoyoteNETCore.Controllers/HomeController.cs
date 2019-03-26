@@ -18,7 +18,7 @@ namespace CoyoteNETCore.Controllers
             _service = service;
         }
 
-        [HttpPost("confirm")]
+        [HttpPost("SampleEndpoint")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public IActionResult SampleEndpoint()
         {
