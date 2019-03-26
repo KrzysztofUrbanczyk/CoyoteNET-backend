@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Controllers;
-using Services;
-using DAL;
+using CoyoteNETCore.Controllers;
+using CoyoteNETCore.Services;
+using CoyoteNETCore.DAL;
 
 namespace Coyote.NETCore
 {

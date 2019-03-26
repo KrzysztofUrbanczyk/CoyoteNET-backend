@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Services;
+using CoyoteNETCore.Services;
+using CoyoteNETCore.DAL;
 using System;
-using DAL;
 
-namespace Controllers
+namespace CoyoteNETCore.Controllers
 {
     public class HomeController : DefaultController
     {
