@@ -17,8 +17,8 @@ You may setup the database in two ways – as you prefer:
 
 1. Using SQL Express:
 	
-	* Download & Install [SQL Express](https://www.microsoft.com/pl-pl/sql-server/sql-server-editions-express)
-	* change connection string in **appsettings.json** to ``Server=.\\SQLExpress;Database=CoyoteNET;Trusted_Connection=Yes;``
+	1. Download and install [SQL Express](https://www.microsoft.com/pl-pl/sql-server/sql-server-editions-express).
+	2. Change the connection string in **appsettings.json** to `Server=.\\SQLExpress;Database=CoyoteNET;Trusted_Connection=Yes;`
 
 2. Using MSSQL Docker image:
 
@@ -27,7 +27,7 @@ You may setup the database in two ways – as you prefer:
         	- [Docker for Linux](https://docs.docker.com/install/linux/docker-ce/centos/)
 	* Follow this [guide](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017) or just copy/paste and execute this commands:
 	
-		- Bash
+		- Bash:
 
 			```bash
 			sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
@@ -35,13 +35,13 @@ You may setup the database in two ways – as you prefer:
 			-d mcr.microsoft.com/mssql/server:2017-latest
 			```
 
-		- Powershell
+		- Powershell:
 
 			```powershell
 			docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=<YourStrong!Passw0rd>" `
 			-p 1433:1433 --name sql1 `
 			-d mcr.microsoft.com/mssql/server:2017-latest
-		```
+			```
 
 #### 2. Settings update
 
@@ -53,7 +53,7 @@ Server=localhost,1433;Database=CoyoteNET;User Id=sa;Password=<YourStrong!Passw0r
 
 #### 3. Running
 
-Go into `Runner` folder and use below command to run project
+To run the project, go into the folder `Runner` and execute the following command:
 
 ```bash
 dotnet run
@@ -65,8 +65,8 @@ dotnet run
 
 ## Technologies this project is built with
 
-* [ASP.NET Core 2.2](https://docs.microsoft.com/pl-pl/aspnet/core/?view=aspnetcore-2.2) - The web framework used
-* [EntityFrameworkCore](https://github.com/aspnet/EntityFrameworkCore) - ORM
+* Web framework: [ASP.NET Core 2.2](https://docs.microsoft.com/pl-pl/aspnet/core/?view=aspnetcore-2.2).
+* ORM: [EntityFrameworkCore](https://github.com/aspnet/EntityFrameworkCore).
 
 ## Contributors
 
