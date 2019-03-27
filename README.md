@@ -1,6 +1,10 @@
 # Coyote.NETCore
 
-This repository contains an implementation of [Coyote forum engine](https://github.com/adam-boduch/coyote) written in .NET Core.
+Backend: https://github.com/dotNETSanta/Coyote.NETCore
+
+Frontend: https://github.com/dotNETSanta/CoyoteFrontend
+
+This repository contains an implementation of [Coyote forum engine](https://github.com/adam-boduch/coyote) written in the [.NET Core framework](https://en.wikipedia.org/wiki/.NET_Core).
 
 ## Getting started
 
@@ -25,7 +29,7 @@ You may setup the database in two ways – as you prefer:
 	* Get docker
         	- [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
         	- [Docker for Linux](https://docs.docker.com/install/linux/docker-ce/centos/)
-	* Follow this [guide](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017) or just copy/paste and execute this commands:
+	* Follow this [guide](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017) or just copy/paste and execute these commands:
 	
 		- Bash:
 
@@ -61,7 +65,7 @@ dotnet run
 
 ## Links
 
-* 💬 Chat: [Slack](https://join.slack.com/t/coyotenetcore/shared_invite/enQtNTg3NDQ5NzA5OTcyLTNlYWU1YmY1Yjg0Yzc2MDFjMzU3NTZkNjIzNDdkODE1NGE5NTQwZDA4Y2UyMWRkOWMyZGJkYmIzZTlkYjA5OWE)
+* 💬 Chat (mainly in Polish language): [Slack](https://join.slack.com/t/coyotenetcore/shared_invite/enQtNTg3NDQ5NzA5OTcyLTNlYWU1YmY1Yjg0Yzc2MDFjMzU3NTZkNjIzNDdkODE1NGE5NTQwZDA4Y2UyMWRkOWMyZGJkYmIzZTlkYjA5OWE) (invitation to the this project's `coyotenetcore` workspace)
 
 ## Technologies this project is built with
 
