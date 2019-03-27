@@ -1,5 +1,9 @@
 # Coyote.NETCore
 
+Backend: https://github.com/dotNETSanta/Coyote.NETCore
+
+Frontend: https://github.com/dotNETSanta/CoyoteFrontend
+
 This repository contains an implementation of [Coyote forum engine](https://github.com/adam-boduch/coyote) written in the [.NET Core framework](https://en.wikipedia.org/wiki/.NET_Core).
 
 ## Getting started
