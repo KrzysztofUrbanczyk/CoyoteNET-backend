@@ -25,7 +25,7 @@ You may setup the database in two ways – as you prefer:
 	* Get docker
         	- [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
         	- [Docker for Linux](https://docs.docker.com/install/linux/docker-ce/centos/)
-	* Follow this [guide](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017) or just copy/paste and execute this commands:
+	* Follow this [guide](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017) or just copy/paste and execute these commands:
 	
 		- Bash:
 
