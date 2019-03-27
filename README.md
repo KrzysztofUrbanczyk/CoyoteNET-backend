@@ -1,3 +1,7 @@
+## Info: Repository name and URL have changed
+
+Everybody who forked, downloaded or cloned this repository should be aware that the repository name has changed – and therefore also its URL has changed. The current are: name – `CoyoteNET-backend`, URL – `https://github.com/CoyoteNET/CoyoteNET-backend`. According to GitHub, all necessary changes in **local repository copies** should be performed automatically; nonetheless, it is strongly recommended to **manually** update local repository copies. For details, see https://help.github.com/en/articles/renaming-a-repository.
+
 [![Build status](https://ci.appveyor.com/api/projects/status/arojw899fesp1qt1?svg=true)](https://ci.appveyor.com/project/dotNETSanta/coyote-netcore)
 
 # Coyote.NETCore [CoyoteNET Organization](https://github.com/CoyoteNET)
