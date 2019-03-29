@@ -76,11 +76,11 @@ dotnet run
 
 ## Contributing to the project
 
-If you want, you may contribute either by making [issues](https://github.com/dotNETSanta/Coyote.NETCore/issues) or [pull requests](https://github.com/CoyoteNET/CoyoteNET-frontend/pulls) to this project.
+If you want, you may contribute either by making [issues](https://github.com/CoyoteNET/CoyoteNET-backend/issues) or [pull requests](https://github.com/CoyoteNET/CoyoteNET-backend/pulls) to this project.
 
 However, before contributing it is hight advisable that you read the [CoyoteNET project contribution rules](https://github.com/CoyoteNET/CoyoteNET-backend/wiki/CoyoteNET-project-contribution-rules).
 
-Thank you to all our [contributors](https://github.com/dotNETSanta/Coyote.NETCore/graphs/contributors)!
+Thank you to all our [contributors](https://github.com/CoyoteNET/CoyoteNET-backend/graphs/contributors)!
 
 ## Will this document change?
 
