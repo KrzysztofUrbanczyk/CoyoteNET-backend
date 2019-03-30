@@ -78,7 +78,7 @@ dotnet run
 
 If you want, you may contribute either by making [issues](https://github.com/CoyoteNET/CoyoteNET-backend/issues) or [pull requests](https://github.com/CoyoteNET/CoyoteNET-backend/pulls) to this project.
 
-However, before contributing it is hight advisable that you read the [CoyoteNET project contribution rules](https://github.com/CoyoteNET/CoyoteNET-backend/wiki/CoyoteNET-project-contribution-rules) – which mention, among others, of the license under you contribute to the project.
+However, before contributing it is hight advisable that you read the [CoyoteNET project contribution rules](https://github.com/CoyoteNET/CoyoteNET-backend/wiki/CoyoteNET-project-contribution-rules) – which mention, among others, of the license under which you contribute to the project.
 
 Thank you to all our [contributors](https://github.com/CoyoteNET/CoyoteNET-backend/graphs/contributors)!
 
