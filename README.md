@@ -4,13 +4,9 @@ Everybody who forked, downloaded or cloned this repository should be aware that 
 
 [![Build status](https://ci.appveyor.com/api/projects/status/arojw899fesp1qt1?svg=true)](https://ci.appveyor.com/project/dotNETSanta/coyote-netcore)
 
-# Coyote.NETCore [CoyoteNET Organization](https://github.com/CoyoteNET)
+# Coyote.NETCore
 
-[Coyote.NETCore Backend](https://github.com/dotNETSanta/Coyote.NETCore)
-
-[Coyote Frontend](https://github.com/dotNETSanta/CoyoteFrontend)
-
-This repository contains an implementation of [Coyote forum engine](https://github.com/adam-boduch/coyote) written in the [.NET Core framework](https://en.wikipedia.org/wiki/.NET_Core).
+This repository contains an implementation of [Coyote forum engine](https://github.com/adam-boduch/coyote) written in the [.NET Core framework](https://en.wikipedia.org/wiki/.NET_Core). It is being developed by the [CoyoteNET](https://github.com/CoyoteNET) collaboration.
 
 ## Getting started
 
