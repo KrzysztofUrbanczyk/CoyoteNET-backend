@@ -1,0 +1,7 @@
+build_script:
+  - cd Coyote
+  - dotnet build
+
+test_script:
+  - cd CoyoteNETCore.Tests
+  - dotnet test
