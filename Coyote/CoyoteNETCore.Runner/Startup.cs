@@ -5,13 +5,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using CoyoteNETCore.Controllers;
 using CoyoteNETCore.Services;
 using CoyoteNETCore.DAL;
 using Swashbuckle.AspNetCore.Swagger;
 using System.Reflection;
 using System;
 using System.IO;
+using CoyoteNetCore.Api;
+using CoyoteNETCore.DAL.Configuration;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
 namespace Coyote.NETCore
@@ -27,15 +28,12 @@ namespace Coyote.NETCore
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<Context>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("Default")),
-                ServiceLifetime.Transient);
+            services.ConfigureDataBase(Configuration);
 
             services.AddTransient<TestService>();
 
             services
                 .AddMvc()
-                .AddApplicationPart(typeof(HomeController).Assembly)
                 .AddControllersAsServices()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
